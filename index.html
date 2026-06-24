@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Gianpool Anthony Millan Quinto</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Arial, sans-serif;
+        }
+        body {
+            background-color: #f5f5f5;
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+        }
+        .cv-container {
+            background-color: #ffffff;
+            width: 800px;
+            min-height: 1050px;
+            display: flex;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        /* Barra Lateral Izquierda */
+        .sidebar {
+            background-color: #eee7de;
+            width: 35%;
+            padding: 40px 30px;
+            color: #333333;
+        }
+        .profile-photo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 3px solid #c5a880;
+            margin: 0 auto 30px auto;
+            background-color: #ccc;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .profile-photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .contact-info {
+            font-size: 13px;
+            margin-bottom: 40px;
+            line-height: 1.8;
+        }
+        .contact-item {
+            margin-bottom: 8px;
+            word-break: break-all;
+        }
+        .sidebar-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            color: #111111;
+            border-bottom: 1px solid #c5a880;
+            padding-bottom: 5px;
+        }
+        .sidebar-list {
+            list-style: none;
+            font-size: 13px;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+        .sidebar-list li {
+            margin-bottom: 10px;
+        }
+        /* Cuerpo Principal Derecho */
+        .main-content {
+            width: 65%;
+            padding: 50px 40px;
+            color: #333333;
+        }
+        .header-name {
+            font-size: 32px;
+            font-weight: 800;
+            color: #000000;
+            line-height: 1.1;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+        .header-title {
+            font-size: 18px;
+            color: #c5a880;
+            margin-bottom: 25px;
+            font-weight: 500;
+        }
+        .profile-desc {
+            font-size: 13.5px;
+            line-height: 1.7;
+            text-align: justify;
+            margin-bottom: 40px;
+        }
+        .section-title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #000000;
+            margin-bottom: 25px;
+            position: relative;
+            padding-left: 15px;
+        }
+        .section-title::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 6px;
+            height: 6px;
+            background-color: #c5a880;
+            border-radius: 50%;
+        }
+        .education-item {
+            margin-bottom: 25px;
+            display: flex;
+            justify-content: space-between;
+            font-size: 14px;
+        }
+        .edu-left {
+            width: 75%;
+        }
+        .edu-degree {
+            font-weight: bold;
+            color: #111111;
+            margin-bottom: 4px;
+        }
+        .edu-institution {
+            color: #c5a880;
+            font-weight: 500;
+        }
+        .edu-date {
+            width: 25%;
+            text-align: right;
+            color: #777777;
+            font-size: 13px;
+        }
+        /* Ajustes para Impresión */
+        @media print {
+            body { padding: 0; background-color: #fff; }
+            .cv-container { box-shadow: none; width: 100%; min-height: 100vh; }
+            @page { size: A4; margin: 0; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="cv-container">
+    <!-- Columna Izquierda -->
+    <div class="sidebar">
+        <!-- Puedes reemplazar la URL de la imagen aquí con tu foto real -->
+        <div class="profile-photo">
+            <span style="color: #777; font-size: 12px;"> <img src="YO.jpeg"> </span>
+        </div>
+        
+        <div class="contact-info">
+            <div class="contact-item">📞 924625854</div>
+            <div class="contact-item">✉️ gianpool.pool@gmail.com</div>
+            <div class="contact-item">📍 San Juan de Lurigancho</div>
+            <div class="contact-item">📅 06/08/2008</div>
+        </div>
+
+        <div class="sidebar-title">Idiomas</div>
+        <ul class="sidebar-list">
+            <li>Inglés Intermedio</li>
+        </ul>
+
+        <div class="sidebar-title">Certificados</div>
+        <ul class="sidebar-list" style="margin-bottom: 0;">
+            <li>Inglés Intermedio - Certificado por el Centro de Idiomas Liberty English</li>
+        </ul>
+    </div>
+
+    <!-- Columna Derecha -->
+    <div class="main-content">
+        <div class="header-name">Gianpool Anthony<br>Millan Quinto</div>
+        <div class="header-title">Asesor/a multifuncional</div>
+        
+        <p class="profile-desc">
+            Estudiante técnico de segundo ciclo de la carrera de Computación e Informática en IDAT (cumplo los 18 años el 6 de agosto de 2026). Me considero una persona alegre, con gran facilidad de adaptación y una comunicación asertiva orientada a construir un ambiente laboral sano y colaborativo. Cuento con una sólida base tecnológica y una alta capacidad de empatizar rápidamente con las personas. Busco mi primera experiencia laboral formal a tiempo parcial (Part-Time) para aportar dinamismo, soluciones informáticas y una excelente atención al cliente.
+        </p>
+
+        
+        <div class="sidebar-title">Habilidades</div>
+        <ul class="sidebar-list">
+            <li>Soporte técnico básico y mantenimiento de equipos de cómputo</li>
+            <li>Conocimientos de redes, conectividad y sistemas operativos (Windows / Linux)</li>
+            <li>Manejo de herramientas de oficina (Microsoft Word básico, Excel básico, PowerPoint básico)</li>
+            <li>Digitación rápida y organización de archivos digitales</li>
+            <li>Comunicación asertiva y fluida</li>
+            <li>Empatía y relaciones interpersonales</li>
+            <li>Adaptabilidad al cambio</li>
+            <li>Promoción de ambientes sanos</li>
+            <li>Puntualidad y alta responsabilidad</li>
+        </ul>
+
+
+        <div class="section-title">Títulos y formación</div>
+        
+        <div class="education-item">
+            <div class="edu-left">
+                <div class="edu-degree">Carrera de Computación e Informática</div>
+                <div class="edu-institution">IDAT</div>
+            </div>
+            <div class="edu-date">Actualidad</div>
+        </div>
+
+        <div class="education-item">
+            <div class="edu-left">
+                <div class="edu-degree">Educación Secundaria</div>
+                <div class="edu-institution">I.E. 0069 Machu Picchu</div>
+            </div>
+            <div class="edu-date">2025</div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
